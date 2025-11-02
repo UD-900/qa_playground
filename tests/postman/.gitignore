@@ -1,0 +1,19 @@
+# Node & Angular
+node_modules/
+dist/
+.env
+logs/
+*.log
+
+# Postman / Newman
+tests/postman/reports/
+*.postman_environment.json
+
+# IDE / System
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tmp
+*.bak
