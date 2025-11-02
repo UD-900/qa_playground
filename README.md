@@ -6,32 +6,6 @@ A full-featured **QA testing playground** to experiment with backend, frontend, 
 
 ## 🚀 Project Structure
 
-qa-playground/
-├── backend/ # Node.js + Express API
-│ ├── src/
-│ ├── package.json
-│ └── ...
-│
-├── frontend/ # Angular app (soon)
-│ ├── src/
-│ ├── angular.json
-│ └── ...
-│
-├── tests/ # All QA test suites
-│ ├── postman/ # Postman collections + Newman reports
-│ │ ├── qa-playground.postman_collection.json
-│ │ ├── qa-playground.postman_environment.json
-│ │ └── reports/
-│ │ └── newman-report.html
-│ │
-│ ├── automation/ # Future: Selenium / Playwright / Cypress
-│ ├── performance/ # Future: k6 / Artillery / JMeter scripts
-│ └── reports/ # Centralized QA test reports
-│
-├── .gitignore
-└── README.md
-
-
 ---
 
 ## 🧰 Tools
@@ -49,18 +23,10 @@ qa-playground/
 ## 🧪 How to Run Tests
 
 ### 1️⃣ Run Backend
-```bash
-cd backend
-npm install
-npm start
-
-Server runs by default on:
-👉 http://localhost:5000
-
-Run Postman Collection (Newman)
+npm run dev
+### 2️⃣ Run Postman Collection (Newman)
 newman run tests/postman/qa-playground.postman_collection.json
-
-🧱 Roadmap
+### 🧱 Roadmap
 
 ✅ Backend (Express.js)
 ✅ Postman + Newman integration
